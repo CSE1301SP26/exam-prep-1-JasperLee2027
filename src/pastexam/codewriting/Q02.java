@@ -17,6 +17,29 @@ public class Q02 {
 	
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
+
+		//start of changes
+		System.out.println("input width");
+			int width = in.nextInt();
+
+		System.out.println("input length");	
+			int length = in.nextInt();
 		
+		int area= length*width;
+
+		System.out.println(area);
+
+
+		while (area != 0) {
+			System.out.println("input width");
+			width = in.nextInt();
+
+			System.out.println("input length");	
+			length = in.nextInt();
+
+			area= length*width;
+			
+			System.out.println(area);
+		}
 	}
 }
