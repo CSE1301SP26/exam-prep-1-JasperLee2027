@@ -22,5 +22,25 @@ public class Q03 {
 		int n = in.nextInt();
 		in.close();
 
+	//start code
+
+	while (n>0) {
+
+		if (n%5==0 && n%3==0) {
+		System.out.println("FizzBuzz");
+		}
+		else if (n%5==0) {
+		System.out.println("Fizz");
+		}
+		else if (n%3==0) {
+		System.out.println("Buzz");
+		}
+		else {
+		System.out.println(n);
+		}
+
+		n--;
+	}
+	//end code
 	}
 }
