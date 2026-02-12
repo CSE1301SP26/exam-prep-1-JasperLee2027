@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Q01 {
 
 	/*
-	 * Linear algebra often uses ìtriangularî arrays. 
+	 * Linear algebra often uses ‚Äútriangular‚Äù arrays. 
 	 * An upper triangular array is a square 2D
 	 * array with zero values below the diagonal 
 	 * and non-zero values at and above it, like:
@@ -27,6 +27,18 @@ public class Q01 {
 		int n = in.nextInt();
 		in.close();
 
-		
+		//start changes
+		double triangle[][] = new double [n][n];
+		for (int row=0; row<n;row++) {
+			 for (int col=0; col<n;col++) {
+			 if (row>col) {
+				 triangle [row][col] = 0.0;
+			 }
+				else {
+					triangle [row][col] = 1.0;
+				 }
+				 }
+		}
+		//end changes
 	}
 }
